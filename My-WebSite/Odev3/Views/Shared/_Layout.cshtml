@@ -1,0 +1,103 @@
+﻿<html lang="tr-TR">
+<head>
+    <meta charset="utf-8">
+    <title>VENÜS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/stillerim.css")">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg menuduzen" >
+        <div class="container-fluid">
+            <a class="navbar-brand ms-0 ms-md-5" href="#">
+                <img src="@Url.Content("~/Content/Site/fotoğraflar/logo.png")" alt="" class="img-fluid logo">    <!--logo-->
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style='font-size:25px;'>&#9681;</span>
+            </button>
+
+            <!--sağ taraf-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                   
+                    <li class="nav-item me-3">
+                          @Html.ActionLink(Odev3.Kaynaklar.dili.Anasayfa, "anasayfa", "Home")
+                    </li>
+
+                    
+
+                    <li class="nav-item me-3 dropdown">
+                        <ul class="nav-link active me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">@Html.ActionLink(Odev3.Kaynaklar.dili.AviyonikSistem, "", "")</ul>
+                        <ul class="dropdown-menu">
+                            <li>&nbsp;&nbsp; @Html.ActionLink(Odev3.Kaynaklar.dili.Mikroislemciler, "mikroislemciler", "Mikroislemciler")</li>
+                            <li>&nbsp;&nbsp; @Html.ActionLink(Odev3.Kaynaklar.dili.BasincSensorleri, "basinc", "Basinc")</li>
+                            <li>&nbsp;&nbsp; @Html.ActionLink(Odev3.Kaynaklar.dili.SicaklikSensorleri, "", "")</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3 dropdown">
+                        <ul class="nav-link active me-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">@Html.ActionLink(Odev3.Kaynaklar.dili.MekanikSistem, "", "")</ul>
+                        <ul class="dropdown-menu">
+                            <li>&nbsp;&nbsp; @Html.ActionLink(Odev3.Kaynaklar.dili.MekanikSistem, "mekanik", "Mekanik")</li>
+                            <li>&nbsp;&nbsp; @Html.ActionLink(Odev3.Kaynaklar.dili.KurtarmaSistemi, "kurtarma", "Kurtarma")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!--sol taraf-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    
+                        @Html.Partial("_LoginPartial")
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<li>
+                        @Html.ActionLink(Odev3.Kaynaklar.dili.adminPaneli, "Index", "Calisan")
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li>@Html.ActionLink("TR", "dilDegistir", "Home", new { lang = "tr", returnurl = this.Request.RawUrl }, null)</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li>@Html.ActionLink("EN", "dilDegistir", "Home", new { lang = "en", returnurl = this.Request.RawUrl }, null)</li>
+
+
+                </ul>
+                &nbsp;&nbsp;
+                <!--arama butonu-->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Ara">
+                    <button class="btn btn-outline-light " type="submit">Ara</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+    
+    <footer class="cikis">
+        <i class="fa fa-copyright" aria-hidden="true" style="font-size: 20px;"></i>&nbsp; @Odev3.Kaynaklar.dili.footer</a>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

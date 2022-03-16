@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Odev3.Models.Table>
+
+@{
+    ViewBag.Title = "Yönetim Paneli";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <br><br><br>
+    <h2><i>ÇALIŞANLAR</i></h2>
+    <hr>
+    <br><br>
+    <p>
+        @Html.ActionLink("Yeni Oluştur", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Soyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alan)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Soyad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Alan)
+                </td>
+                <td>
+                    @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Detaylar", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+<br><br><br><br><br>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a1" xml:space="preserve">
+    <value>There are four categories in the competition:</value>
+  </data>
+  <data name="a10" xml:space="preserve">
+    <value>We are sending the TÜRKSAT 5B satellite into space on 19 December at 06:58 with the SpaceX Falcon 9 rocket.</value>
+  </data>
+  <data name="a11" xml:space="preserve">
+    <value>Astronauts in Space!</value>
+  </data>
+  <data name="a12" xml:space="preserve">
+    <value>Teknofest Winners!</value>
+  </data>
+  <data name="a13" xml:space="preserve">
+    <value>We Are Sending 5D Satellite to Space!</value>
+  </data>
+  <data name="a14" xml:space="preserve">
+    <value>Follow us!</value>
+  </data>
+  <data name="a15" xml:space="preserve">
+    <value>Follow us on Instagram!</value>
+  </data>
+  <data name="a16" xml:space="preserve">
+    <value>Follow us on Twitter!</value>
+  </data>
+  <data name="a17" xml:space="preserve">
+    <value>Follow us on LinkedIn!</value>
+  </data>
+  <data name="a18" xml:space="preserve">
+    <value>Follow us on GitHub!</value>
+  </data>
+  <data name="a19" xml:space="preserve">
+    <value>ROCKET</value>
+  </data>
+  <data name="a2" xml:space="preserve">
+    <value>High School Category (5,000 feet)</value>
+  </data>
+  <data name="a3" xml:space="preserve">
+    <value>Medium Altitude Category (10,000 feet)</value>
+  </data>
+  <data name="a4" xml:space="preserve">
+    <value>High Altitude Category (20,000 feet)</value>
+  </data>
+  <data name="a5" xml:space="preserve">
+    <value>Challenge Category (10,000 feet)</value>
+  </data>
+  <data name="a6" xml:space="preserve">
+    <value>Within the scope of the competition, the teams; They are required to prepare 3 different reports: Preliminary Design Report (ÖTR), Critical Design Report (KTR), Shooting Readiness Report (AHR).</value>
+  </data>
+  <data name="a7" xml:space="preserve">
+    <value>Rocket News</value>
+  </data>
+  <data name="a8" xml:space="preserve">
+    <value>SpaceX has delivered NASA's "Crew-3" astronauts to the International Space Station!</value>
+  </data>
+  <data name="a9" xml:space="preserve">
+    <value>The winners of Roketsan's Rocket Competition within the scope of TEKNOFEST have been announced!</value>
+  </data>
+  <data name="adminPaneli" xml:space="preserve">
+    <value>Admin Panel</value>
+  </data>
+  <data name="Anasayfa" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="anasayfayazi" xml:space="preserve">
+    <value>Rocket, mechanically, as in a jet engine, produces thrust depending on the combustion process, but while doing this, it requires a forced air from the environment.
+             It is the name given to the motor that does not need an input. All military or civilian bullets, missiles, space-air vehicles that produce self-propelled by using a rocket engine can also be called rocket. Rocket Competition is organized within the scope of TEKNOFEST Technology competitions.
+             The aim of the Rocket Competition is to increase students' interest in the field of space technologies and to improve their abilities in this field.
+             Many technology competitions are organized within the scope of TEKNOFEST Aviation, Space and Technology Festival in order to raise awareness in the society about aviation, space and technology, to support young people who are interested in these fields, to encourage young people to research on the technologies of the future, and to make them familiar with professional design processes.</value>
+  </data>
+  <data name="AviyonikSistem" xml:space="preserve">
+    <value>Avionics System</value>
+  </data>
+  <data name="BasincSensorleri" xml:space="preserve">
+    <value>Pressure Sensors</value>
+  </data>
+  <data name="footer" xml:space="preserve">
+    <value>All rights of this site belong to Ayşegül Toptaş.</value>
+  </data>
+  <data name="kaydol" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="KurtarmaSistemi" xml:space="preserve">
+    <value>Recovery System</value>
+  </data>
+  <data name="m1" xml:space="preserve">
+    <value>MICROPROCESSORS</value>
+  </data>
+  <data name="m10" xml:space="preserve">
+    <value>PWM Output</value>
+  </data>
+  <data name="m11" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="m12" xml:space="preserve">
+    <value>Arduino is an electronic hardware and software based development platform.
+                 Arduino Uno is the most widely used and best known model.
+                 It was made available in 2010. With Arduino Uno, you can get physical information from various sensors and do various experiments with this information.
+                 You can also get an output from stimuli such as motor, LED, buzzer.
+                 The speed of the motors, such as the brightness levels of the LEDs, are controlled by connecting the exciter to these PWM pins.
+                 The 6 analog inputs in Arduino Uno are for sensors from which we can receive analog input signals.</value>
+  </data>
+  <data name="m13" xml:space="preserve">
+    <value>Digital Input/Output Pin</value>
+  </data>
+  <data name="m14" xml:space="preserve">
+    <value>Operating voltage</value>
+  </data>
+  <data name="m15" xml:space="preserve">
+    <value>Arduino Nano is a small, complete and breadboard friendly Arduino board that houses an ATmega328 microcontroller (Arduino Nano 3.x) or an Atmega168 (Arduino Nano 2.x) microcontroller.
+                 The Arduino Nano can be powered by connecting a computer with a type B mini USB cable, or it can be powered from an external power source. An external power supply in the range of 6-20 V can be connected to pin 30 or supplied with a regulated voltage of 5 V from pin 27.
+                 All 14 digital input/output pins in Arduino Nano can be used as inputs or outputs with pinMode(), digitalWrite() and digitalRead() functions. These pins work with 5 V.</value>
+  </data>
+  <data name="m16" xml:space="preserve">
+    <value>Number of LEDs</value>
+  </data>
+  <data name="m17" xml:space="preserve">
+    <value>Push Button</value>
+  </data>
+  <data name="m18" xml:space="preserve">
+    <value>Power source</value>
+  </data>
+  <data name="m19" xml:space="preserve">
+    <value>The STM32F407 is a 32-bit microcontroller with a clock frequency of 168 MHz.
+                 Especially in DSP applications, it is used as the main brain of structures with many sub-systems.
+                 It has STM32F4VG kernel on it.
+                 It has 3-axis accelerometer, internal audio input and digital analog converter connected to it, 4 programmable LEDs, 2 buttons.</value>
+  </data>
+  <data name="m2" xml:space="preserve">
+    <value>What is a microprocessor?</value>
+  </data>
+  <data name="m20" xml:space="preserve">
+    <value>Teensy 3.6 is a small and breadboard compatible development board. It has 32-bit ARM Cortex-M4 platform. It offers easy programming with a modified version of the Arduino IDE (Teensyduino). Teensy 3.6 is the latest version of Teensy that has been updated to versions 3.2 and 3.5 and offers more processing power.
+
+                     Version 3.6 has a 32-bit 180MHz ARM Cortex-M4 processor with a floating point unit. All digital and analog inputs work at 3.3V</value>
+  </data>
+  <data name="m3" xml:space="preserve">
+    <value>Microprocessor is an integrated circuit element that can perform logical and arithmetic operations and direct its operation depending on the results of these operations. Microprocessors, which are the brains of the electronic structures they are in, control the mechanism they are connected to.</value>
+  </data>
+  <data name="m4" xml:space="preserve">
+    <value>What should be considered when choosing a microprocessor?</value>
+  </data>
+  <data name="m5" xml:space="preserve">
+    <value>Microprocessor selections should be made in accordance with the software language to be used. Having sufficient number of input-output pins for the system to be used and sufficient processing power are the points to be considered when choosing.</value>
+  </data>
+  <data name="m6" xml:space="preserve">
+    <value>Types of Microprocessors</value>
+  </data>
+  <data name="m7" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="m8" xml:space="preserve">
+    <value>Digital Output Pin</value>
+  </data>
+  <data name="m9" xml:space="preserve">
+    <value>Analog Input</value>
+  </data>
+  <data name="MekanikSistem" xml:space="preserve">
+    <value>Mechanical System</value>
+  </data>
+  <data name="merhaba" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="Mikroislemciler" xml:space="preserve">
+    <value>Microprocessors</value>
+  </data>
+  <data name="oturumac" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="oturumkapa" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="SicaklikSensorleri" xml:space="preserve">
+    <value>Temperature Sensors</value>
+  </data>
+</root>

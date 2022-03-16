@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner" style="height: 500px;">
+        @foreach (var item in @ViewBag.fotoğraflar)
+        {
+<div class="carousel-item @(item.resim1=="resim1.jpg" ? "active" : "")  ">
+    <img src=@Url.Content("~/Content/Site/fotoğraflar/"+ item.resim1) class="d-block w-100" style="height:600px" alt="...">
+</div>}
+
+        
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+    </button>
+</div>
+
+<!--site-->
+<div class="main" style="text-align: center;">
+    <h3 class="anasayfa-baslik"><strong>&#128640;@Odev3.Kaynaklar.dili.a19</strong></h3>
+    @Odev3.Kaynaklar.dili.anasayfayazi
+
+</div>
+
+<h6><strong>&nbsp&nbsp @Odev3.Kaynaklar.dili.a1</strong> </h6>
+<br>
+<ul type="disc">
+    <li> @Odev3.Kaynaklar.dili.a2</li>
+    <li> @Odev3.Kaynaklar.dili.a3</li>
+    <li> @Odev3.Kaynaklar.dili.a4</li>
+    <li> @Odev3.Kaynaklar.dili.a5</li>
+</ul>
+<br>
+<p>&nbsp&nbsp @Odev3.Kaynaklar.dili.a6</p>
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2 class="anasayfa-baslik"><strong>&#128640;@Odev3.Kaynaklar.dili.a7</strong> </h2><br><br>
+
+        <ul>
+            <div class="row">
+                <div class="card">
+                    <img src="@Url.Content("~/Content/Site/fotoğraflar/haber1.jpg")" alt="astronot" style="width: 100%">
+                    <h4><i>&nbsp&nbsp @Odev3.Kaynaklar.dili.a11</i></h4>
+                    <a class="container" href=@Url.Action("haber1", "Haber1")>
+                        <p>@Odev3.Kaynaklar.dili.a8</p>
+                    </a> <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <img src="@Url.Content("~/Content/Site/fotoğraflar/haber2.jpg")" alt="teknofest" style="width: 100%">
+                    <h4><i>&nbsp&nbsp @Odev3.Kaynaklar.dili.a12</i></h4>
+                    <a class="container" href=@Url.Action("haber2", "Haber2")>
+                        <p>@Odev3.Kaynaklar.dili.a9</p>
+                    </a><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <img src="@Url.Content("~/Content/Site/fotoğraflar/haber3.jpg")" alt="uydu" style="width: 100%">
+                    <h4><i>&nbsp&nbsp @Odev3.Kaynaklar.dili.a13</i></h4>
+                    <a class="container" href="kayıt-ekranı.html">
+                        <p>@Odev3.Kaynaklar.dili.a10</p>
+                    </a><br>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+
+
+        <div class="col-md-12">
+            <h2 class="anasayfa-baslik"><strong>&#10004;@Odev3.Kaynaklar.dili.a14</strong> </h2><br><br>
+
+
+            <ul>
+                <li><i class="fa fa-instagram" aria-hidden="true" style="font-size: 25;"></i><a href="https://www.instagram.com/"><strong>&nbsp; @Odev3.Kaynaklar.dili.a15</strong> </a></li>
+                <br>
+                <li><i class="fa fa-twitter" aria-hidden="true" style="font-size: 25;"></i><a href="https://twitter.com/?lang=tr"><strong>&nbsp; @Odev3.Kaynaklar.dili.a16</strong> </a></li>
+                <br>
+                <li><i class="fa fa-linkedin" aria-hidden="true" style="font-size: 25;"></i><a href="https://tr.linkedin.com/"><strong>&nbsp; @Odev3.Kaynaklar.dili.a17</strong> </a></li>
+                <br>
+                <li><i class="fa fa-github" aria-hidden="true" style="font-size: 25;"></i><a href="https://github.com/"><strong>&nbsp; @Odev3.Kaynaklar.dili.a18</strong> </a></li>
+                <br>
+            </ul>
+        </div>
+
+
+
+    </div>
+</div>

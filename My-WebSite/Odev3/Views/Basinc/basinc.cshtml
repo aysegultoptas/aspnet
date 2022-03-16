@@ -1,0 +1,192 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <br><br>
+    <h1 class="buyuk-baslik"><i>BASINÇ SENSÖRLERİ</i></h1>
+    <hr>
+    <h6><strong>Basınç sensörü nedir ve nasıl kullanılır?</strong></h6>
+    <p>
+        Basınç sensörü, hacimsel büyüklüğe sahip; gaz ve sıvı bileşenlerin basınç derecesini ölçmek için kullanılan bir cihazdır.
+        Günümüzde üretim ve kontrol aşamalarında, oldukça yaygın bir kullanım alanına sahiptir. Bu sensör çeşidi ile basınç, elektrik sinyallerine dönüştürülerek toplanan veriler, takip, analiz ve istatistiki datalar haline dönüştürülmektedir.
+        Kapalı bir alanda bulunan bileşenlerin basıncı, basınç sensörleri sayesinde hem izlenebilir hem de kontrol edilebilir.
+        Anlık olarak uygulanan basıncın verisini algılayıp, bunu analog bir sinyal değerine dönüştürür. Analog sinyal verisinin üretilmesinin ardından gerekli dönüştürücüler “transducer” ile uygulamalarda değerlendirilebilecek veriler haline dönüştürülür.
+    </p>
+
+    <h6><strong>Basınç sensörü nerelerde kullanılır?</strong></h6>
+    <p>
+        Basınç, sıcaklık, debi gibi fiziksel terimlerin anlamlı hale dönüşebilmeleri için karşılık gelecek sayısal değerler ile nitelendirilmesi gerekir.
+        Basınç sensörleri neredeyse her alanda kullanılıyor desek yanlış olmaz çünkü bu harika aletin birbirinden farklı modeli bulunmaktadır.
+        Mesela barometrik basınç sensörü, atmosferik basınçları ölçmeye yararken hidrolik basınç sensörü ise basıncı çevrimiçi olarak ölçmek için kullanılmaktadır.
+        Yani basınç ölçüm sensörü, özellikle kimya ve fizik biliminin olduğu her yerde kullanılmaktadır.
+        Bunların yanı sıra HVAC gibi özel sistemlerde genelde hava filtrelerinin izlenmesi için basınç sensörleri kullanılmaktadır.
+        Filtreler tıkanmaya başlarsa basınc sensörü, bu durumu hemen tespit edecektir.
+        Yani basınç sensörleri, durum tespiti yapılmak istenen her yerde kullanılabilir.
+    </p><br>
+    <h6><strong>Basınç Sensörü Çeşitleri:</strong></h6>
+    <ul type="circle">
+        <li>Gerinim Ölçer Basınç Sensörü</li>
+        <li>Kapasitif Basınç Sensörü</li>
+        <li>Kapasitif Fark Basınç Sensörü</li>
+        <li>Piezoelektrik Basınç Sensörü</li>
+    </ul><br><br>
+    <h2 class="aviyonik-baslik"><strong><i>Basınç Sensörleri</i></strong></h2><br><br><br>
+
+
+
+    <!--BME 280-->
+    <div class="row">
+        <div class="col-md-4 menu">
+            <div class="tablo">
+                <table>
+                    <tr>
+                        <th class="tablo-baslik">Özellik</th>
+                        <th class="tablo-baslik">&nbsp;&nbsp;BME 280</th>
+
+                    </tr>
+                    <tr>
+                        <td>Haberleşme</td>
+                        <td>: I2C</td>
+
+                    </tr>
+                    <tr>
+                        <td>Basınç Aralığı</td>
+                        <td>: 300- 1100</td>
+
+                    </tr>
+                    <tr>
+                        <td>Sıcaklık Aralığı</td>
+                        <td>: -40C +85C</td>
+                    </tr>
+                    <tr>
+                        <td>Boyut</td>
+                        <td>: 19x18 mm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4 menu">
+            <h1>BME 280</h1><br>
+            <p>
+                Bosch'un bu hassas sensörü, nem oranını ±% 3 doğrulukla, barometrik basıncı ± 1 hPa mutlak hassasiyetle ve sıcaklık ile ± 1.0 ° C doğrulukla ölçmek için en uygun düşük maliyetli algılama çözümüdür.
+                Basınç yükseklik ile değişir ve basınç ölçümleri çok iyi olduğu için ± 1 metre veya daha iyi doğrulukta bir altimetre olarak da kullanabilirsiniz!
+            </p>
+        </div>
+        <div class="col-md-4 menu">
+            <img src="@Url.Content("~/Content/Site/fotoğraflar/bme280.jpg")" class="aviyonik-fotograf" style="width: 100%;"><br><br>
+        </div>
+    </div>
+    <br> <br>
+
+
+    <!--LPS25HB-->
+    <div class="row">
+        <div class="col-md-4 menu">
+            <div class="tablo">
+                <table>
+                    <tr>
+                        <th class="tablo-baslik">Özellik</th>
+                        <th class="tablo-baslik">&nbsp;&nbsp;LPS 25HB</th>
+
+                    </tr>
+                    <tr>
+                        <td>Haberleşme</td>
+                        <td>: I2C ve SPI</td>
+
+                    </tr>
+                    <tr>
+                        <td>Basınç Aralığı</td>
+                        <td>: 260- 1260</td>
+
+                    </tr>
+                    <tr>
+                        <td>Sıcaklık Aralığı</td>
+                        <td>: -30C +105C</td>
+                    </tr>
+                    <tr>
+                        <td>Boyut</td>
+                        <td>: 10x20 mm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-4 menu">
+            <h1>LPS25HB</h1><br>
+            <p>
+                260 mbar ile 1260 mbar arasında ±0.2 mbar hassasiyetinde ölçüm yapabilen basınç sensör kartıdır.
+                Üzerinde 3.3V regülatör bulunduğundan 2.5-5.5V arası gerilimlerle sorunsuzca çalışabilir. SPI ve I2C arayüzleri ile kullanılabilir.
+                0.1" standart header bağlantıları sayesinde breadboard ve delikli kartlara kolayca bağlantı yapılabilir.
+            </p>
+        </div>
+
+        <div class="col-4 menu">
+            <img src="@Url.Content("~/Content/Site/fotoğraflar/lps25hb.png")" class="aviyonik-fotograf" style="width: 100%;"><br><br>
+        </div>
+    </div>
+
+    <br><br>
+
+
+
+
+    <!--BMP 180-->
+    <div class="row">
+        <div class="col-md-4 menu">
+            <div class="tablo">
+                <table>
+                    <tr>
+                        <th class="tablo-baslik">Özellik</th>
+                        <th class="tablo-baslik">&nbsp;&nbsp;BMP 180</th>
+
+                    </tr>
+                    <tr>
+                        <td>Haberleşme</td>
+                        <td>: I2C</td>
+
+                    </tr>
+                    <tr>
+                        <td>Basınç Aralığı</td>
+                        <td>: 300- 1100</td>
+
+                    </tr>
+                    <tr>
+                        <td>Sıcaklık Aralığı</td>
+                        <td>: -40C +85C</td>
+                    </tr>
+                    <tr>
+                        <td>Boyut</td>
+                        <td>: 14x12 mm</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4 menu">
+            <h1>BMP 180</h1><br>
+            <p>
+                BMP180 dijital çıkışı basınç sensörü, ortamdaki hava basıncını ölçerek dijital şekilde çıkış veren oldukça küçük boyutlu ve çok kullanışlı bir üründür.
+                Hava basıncına göre sensör yüksekliğinin anlaşılmasından dolayı multicopter projeleri başta olmak üzere bir çok sistemde kullanılabilir.
+                Arduino başta olmak üzere bir çok mikrodenetleyici kartı ile rahatlıkla kullanılabilir olan BMP180, 300-1100hPa arasındaki basınç değerini ölçebilmekte ve 500 metre ile 9000 metre arasındaki yükseklik ile ilgili bilgi vermektedir.
+                0.03 hPa (0,25metre) gibi çok yüksek bir çözünürlüğe sahiptir.
+            </p>
+        </div>
+        <div class="col-md-4 menu">
+            <img src="@Url.Content("~/Content/Site/fotoğraflar/bmp180.jpg")" class="aviyonik-fotograf" style="width: 100%;"><br><br>
+        </div>
+    </div>
+
+    <br><br>
+
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
