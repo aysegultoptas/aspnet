@@ -1,2 +1,2 @@
 # aspnet
-ASP NET (MVC) WEB SİTESİ PROJESİ
+ASP NET (MVC) kullanılarak tasarlanan web sitesi.
