@@ -1,2 +1,2 @@
 # aspnet
-ASP NET (MVC) PROJESİ
+ASP NET (MVC) WEB SİTESİ PROJESİ
